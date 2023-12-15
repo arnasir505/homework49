@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir projects
 cd projects
 mkdir my_project
@@ -11,3 +12,4 @@ echo "Hello from JS" > hello.txt
 cd ..
 cd directory3
 mkdir subdirectory3
+chmod -R 755 projects
