@@ -1,14 +1,19 @@
-const whiteSquare = '  ';
-const blackSquare = '██';
-let chessBoard = '';
-for (let i = 0; i < 8; i++) {
-    for (let j = 0; j < 8; j++) {
-        if ((i + j) % 2 === 0) {
-            chessBoard += whiteSquare;
-        } else {
-            chessBoard += blackSquare;
+const createChessBoard = () => {
+    const whiteSquare = '  ';
+    const blackSquare = '██';
+    const boardSize = 8;
+    let chessBoard = '';
+    for (let i = 0; i < boardSize; i++) {
+        for (let j = 0; j < boardSize; j++) {
+            if ((i + j) % 2 === 0) {
+                chessBoard += whiteSquare;
+            } else {
+                chessBoard += blackSquare;
+            }
         }
+        chessBoard += '\n';
     }
-    chessBoard += '\n';
-}
-console.log(chessBoard);
+    console.log(chessBoard);
+};
+
+createChessBoard();
